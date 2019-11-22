@@ -1,0 +1,92 @@
+        .ba-header {
+            background-color: $dark-bg;
+            min-height: 100px;
+            font-family: $secondary-font-family;
+            &__bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+        .ba-menu {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .ba-nav {
+            @media screen and (max-width: $medium) {
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.9);
+                box-shadow: 0 0 10px $dark-bg;
+            }
+        }
+        
+        .ba-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            list-style: none;
+            color: $text-color-light;
+            font-weight: 500;
+            li {
+                font-family: $secondary-font-family;
+                height: 34px;
+                line-height: 34px;
+                letter-spacing: 1px;
+                text-align: center;
+                padding: 6px 10px 10px;
+            }
+            li:hover {
+                background-color: $primary-color;
+            }
+            @media screen and (min-width: $medium) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                line-height: 1;
+                font-size: 14px;
+                li {
+                    height: 34px;
+                    line-height: 34px;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
+            }
+            .ba-menu-toggle {
+                border: none;
+                background: none;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                z-index: 2;
+                min-width: initial;
+                padding: 0;
+                height: auto;
+                line-height: 1;
+                margin-top: 17px;
+                &:hover,
+                &:focus {
+                    background: none;
+                    color: $primary-color;
+                    border: none;
+                }
+            }
+            .ba-menu-toggle svg {
+                fill: currentColor;
+            }
+            @media (min-width: $large) {
+                .ba-menu-toggle {
+                    display: none;
+                }
+            }
+            .ba-logo img {
+                display: block;
+            }
+        }

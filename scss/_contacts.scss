@@ -1,0 +1,179 @@
+    .ba-section-contacts {
+        background: $dark-bg url(../img/contacts.bg.png) 50% no-repeat;
+        background-size: cover;
+        padding: 35px 0 40px;
+    }
+    
+    .ba-contacts-socials {
+        color: $light-bg;
+        display: flex;
+        padding-bottom: 32px;
+        justify-content: space-between;
+        position: relative;
+        p {
+            color: $text-color;
+            max-width: 575px;
+            position: relative;
+            padding-left: 40px;
+            text-align: left;
+            span {
+                color: #464646;
+            }
+            svg {
+                color: $light-bg;
+            }
+            &:before {
+                content: '';
+                height: 20px;
+                width: 24px;
+                background: url(../img/icons/twitter.png) 50% no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        &:after {
+            content: '';
+            height: 1px;
+            width: 100%;
+            background-color: #323232;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    
+    .ba-info {
+        display: flex;
+        padding: 63px 0 153px;
+        @media screen and (max-width: $large) {
+            flex-direction: column;
+        }
+        &-text {
+            color: $text-color;
+            display: flex;
+            flex-direction: column;
+            max-width: 348px;
+            margin-right: 152px;
+            @media screen and (max-width: $large) {
+                margin-bottom: 30px;
+            }
+            p {
+                text-align: left;
+                margin-bottom: 32px;
+                font-family: $secondary-font-family;
+                font-style: 13px;
+                font-weight: 300;
+            }
+            a {
+                margin-left: 20px;
+                &:hover {
+                    color: #5cf75c;
+                }
+            }
+            &__tel {
+                position: relative;
+                font-family: $secondary-font-family;
+                &:before {
+                    content: '';
+                    width: 7px;
+                    height: 12px;
+                    position: absolute;
+                    background: url(../img/icons/phone-icon.png) no-repeat 50%;
+                    top: 6px;
+                    left: -20px;
+                }
+            }
+            &__mail {
+                position: relative;
+                font-family: $secondary-font-family;
+                &:before {
+                    content: '';
+                    width: 12px;
+                    height: 9px;
+                    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAYAAAAGuM1UAAAAnElEQVQoU42R0Q3CMAxE301Q2IANWIENgAnKBqxCNqAbwAb9yi9iA0aACYwcOVWFFJX8Rb5n39nKOV+AM/+9pJzzG7gCJ6BrcJ/Q9A5YiFIDquLiYg74P0namdm2FKWnmY1zy7/AXdIDODoQ4g2wr1YnILq9ongLwQEYJa2nqZHBfbqob4QeAIe7OsEDL622aBzwO3jn1cIpfP3DFxIZQ/UDA8qIAAAAAElFTkSuQmCC');
+                    position: absolute;
+                    top: 8px;
+                    left: -22px;
+                }
+            }
+        }
+    }
+    
+    .ba-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 617px;
+        &-row {
+            display: flex;
+            margin-bottom: 16px;
+            @media screen and (max-width: $medium) {
+                flex-direction: column;
+                flex-grow: 1;
+            }
+            @media screen and (min-width:$medium) and (max-width:$large) {
+                flex-direction: column;
+                max-width: 50%;
+            }
+            &__input {
+                min-width: 212px;
+                background-color: transparent;
+                outline: none;
+                border: 1px solid $text-color;
+                color: #fff;
+                padding: 9px 0 9px 13px;
+                font-size: 12px;
+                &::placeholder {
+                    text-transform: uppercase;
+                }
+                &+& {
+                    margin-left: 17px;
+                    @media screen and (max-width: $large) {
+                        margin: 10px 0 0;
+                    }
+                }
+            }
+        }
+        &-col {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            @media screen and (max-width: $large) {
+                flex-direction: column;
+            }
+            &__message {
+                background-color: transparent;
+                outline: none;
+                border: 1px solid $text-color;
+                min-width: 441px;
+                text-transform: uppercase;
+                padding: 9px 0 0 13px;
+                color: #fff;
+                margin-right: 17px;
+                @media screen and (max-width: $large) {
+                    margin: 0 auto 10px;
+                    min-width: 100%;
+                }
+            }
+            &__email {
+                color: $text-color;
+                position: absolute;
+                right: 5px;
+                bottom: 50%;
+                @media screen and (max-width: $large) {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .ba-copyright {
+        display: flex;
+        justify-content: space-between;
+        p {
+            color: $text-color;
+        }
+        a {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }

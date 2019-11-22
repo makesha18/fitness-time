@@ -1,0 +1,90 @@
+        .ba-section-team {
+            background: $dark-bg url(../img/trainers-bg.png) no-repeat;
+            background-size: cover;
+            padding-bottom: 20px;
+            @media screen and (min-width: $large) {
+                padding-bottom: 60px;
+            }
+            &__photos {
+                padding: 0 auto;
+                @media screen and (min-width: $large) {
+                    flex-wrap: nowrap;
+                    padding: 0;
+                    @media screen and (min-width: $medium) {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        
+        .ba-section-title {
+            font-size: 24px;
+            font-weight: 700;
+            font-family: $secondary-font-family;
+            color: $text-color-light;
+            padding-top: 57px;
+            padding-bottom: 16px;
+            &::after {
+                content: "";
+                background: $text-color-light;
+                height: 2px;
+                width: 45px;
+                margin: 10px auto 0;
+                display: block;
+            }
+        }
+        
+        .ba-row {
+            padding: 0 auto;
+            @media screen and (min-width: $large) {
+                flex-wrap: nowrap;
+                padding: 0;
+                @media screen and (min-width: $medium) {
+                    justify-content: center;
+                }
+            }
+            .ba-team-members {
+                background: $light-bg;
+                padding-left: 0;
+                font-family: $secondary-font-family;
+                img {
+                    width: 100%;
+                    @media screen and (min-width: $medium) {
+                        margin-bottom: 10px;
+                    }
+                    @media screen and (min-width: $large) {
+                        margin-right: 30px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .ba-team-members__info {
+                display: flex;
+                flex-direction: column;
+                .ba-team-members__name {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 1;
+                    line-height: 24px;
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    color: $dark-bg;
+                    text-align: center;
+                    @media screen and (min-width: $large) {
+                        text-align: left;
+                        margin-bottom: 7px;
+                    }
+                }
+                .ba-team-members__subscribe {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    text-align: center;
+                    @media screen and (min-width: $large) {
+                        text-align: left;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }

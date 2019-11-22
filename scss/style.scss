@@ -1,0 +1,79 @@
+$body-font-family:'Open Sans',
+sans-serif;
+$secondary-font-family:'Oswald',
+sans-serif;
+$italic: 'Droid Serif',
+italic;
+$large: 1024px;
+$medium: 640px;
+$primary-color: #E25050;
+$text-color:#777777;
+$text-color-dark: #202020;
+$text-color-light: #FEFEFE;
+$medium: 640px;
+$large: 1024px;
+$light-bg: #FFFFFF;
+$dark-bg: #202020;
+@import "_normalize";
+@import "_layout";
+@import "_elements";
+@import "fonts";
+@import "_header";
+@import "_section-intro";
+@import "_features";
+@import "_team";
+@import "_gallery";
+@import "_prising";
+@import "partners";
+@import "contacts";
+body {
+    font: 400 13px/1.6 $body-font-family;
+    color: $text-color;
+}
+
+a {
+    color: $text-color-light;
+    text-decoration: none;
+}
+
+p {
+    font-size: 13px;
+}
+
+
+/* Layout */
+
+.ba-container {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0 10px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 13px;
+}

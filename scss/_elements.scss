@@ -1,0 +1,64 @@
+.ba-button {
+    background-color: $primary-color;
+    color: $text-color-light;
+    font-size: 14px;
+    padding: 4px 10px;
+    display: inline-block;
+    &__number {
+        width: 140px;
+        height: 37px;
+        position: absolute;
+        top: 101px;
+        right: 150px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        margin-right: 12%;
+        text-transform: uppercase;
+        @media screen and (min-width: $large) {
+            top: 98px;
+        }
+        @media screen and (min-width: $medium) {
+            right: -50px;
+        }
+        &:hover {
+            background-color: #277a3c;
+        }
+        &::before {
+            content: "";
+            background: #bd4141 url('data:image/svg+xml,\
+				<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="14px">\
+			  <path fill-rule="evenodd" fill="rgb(255, 255, 255)"\
+			  d="M1.920,0.517 C2.480,-0.044 4.173,-0.137 4.186,0.159 C4.199,0.456 5.711,3.743 5.724,4.040 C5.737,4.336 4.727,5.346 4.431,5.642 C4.139,5.935 6.408,8.500 6.451,8.549 C6.499,8.592 9.063,10.862 9.356,10.569 C9.652,10.273 10.662,9.263 10.958,9.276 C11.254,9.289 14.540,10.802 14.836,10.815 C15.132,10.828 15.039,12.521 14.479,13.082 C14.000,13.561 11.519,15.300 7.206,12.194 C6.733,11.922 5.984,11.297 4.848,10.162 C4.847,10.161 4.846,10.160 4.846,10.160 C4.845,10.159 4.844,10.158 4.843,10.157 C4.842,10.156 4.841,10.155 4.840,10.154 C4.840,10.154 4.839,10.153 4.838,10.152 C3.703,9.016 3.079,8.266 2.807,7.793 C-0.298,3.478 1.441,0.996 1.920,0.517 Z" />\
+			  </svg>') 50% no-repeat;
+            position: absolute;
+            left: -37px;
+            width: 37px;
+            height: 37px;
+            top: 0;
+        }
+    }
+}
+
+.ba-menu-toggle {
+    position: fixed;
+    right: 30px;
+    border: none;
+    background: none;
+    z-index: 2;
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+    svg {
+        fill: $text-color-light;
+    }
+    svg:hover,
+    svg:focus {
+        fill: $primary-color;
+    }
+    @media screen and (min-width: $large) {
+        display: none;
+    }
+}

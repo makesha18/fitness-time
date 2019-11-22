@@ -1,0 +1,50 @@
+.ba-section-intro {
+    background: url(../img/main-bg.png) 50% no-repeat;
+    background-size: cover;
+    color: $text-color-light;
+    font-family: $secondary-font-family;
+    &__title {
+        font-size: 24px;
+        font-family: $body-font-family;
+        text-align: center;
+        margin: 0;
+        line-height: 1.4;
+        margin-left: 20px;
+    }
+}
+
+.ba-inner-container {
+    padding-top: 215px;
+    padding-bottom: 215px;
+}
+
+.ba-intro__A {
+    background-color: $primary-color;
+    border: 1px solid inherit;
+    width: 148px;
+    height: 33px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 2px;
+}
+
+.ba-intro__B {
+    background-color: $dark-bg;
+    border: 1px solid inherit;
+    width: 370px;
+    height: 66px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 17px;
+    margin-bottom: 2px;
+}
+
+.ba-intro__C {
+    background-color: $dark-bg;
+    border: 1px solid inherit;
+    font-weight: 400;
+    width: 261px;
+    height: 45px;
+    text-align: center;
+    padding-top: 13px;
+}
